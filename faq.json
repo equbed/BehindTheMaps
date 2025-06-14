@@ -1,7 +1,8 @@
 [
   {
-    "question": "How do I add a new layer in ArcGIS?",
-    "answer": "<p>Go to your layer menu and click <strong>Add Layer</strong>.</p><img src='images/add-layer.png' alt='Add Layer Screenshot'>"
+    "question": "Turning on Notebooks",
+    "answer": "<p>﻿Before you can set up a notebook in ArcGIS Online, you need to make sure they are enabled on your server. 
+    See <a href=https://www.arcgis.com/home/item.html?id=db05d4f32e6145669e9d39f0ab258b67&rmedium=links_esri_com_0_a&rsource=https%3A%2F%2Flinks.esri.com%2Fagol-help%2Flesson%2Fenable-notebooks>here for directions.</a></p>"
   },
   {
     "question": "How do I share my map?",
