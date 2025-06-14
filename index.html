@@ -1,32 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Accordion</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+    }
+    .accordion {
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .accordion-header {
+      background-color: #e2e2e2;
+      cursor: pointer;
+      padding: 16px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .accordion-header:hover {
+      background-color: #d0d0d0;
+    }
+    .accordion-content {
+      display: none;
+      padding: 16px;
+      border-top: 1px solid #ccc;
+    }
+    .accordion.open .accordion-content {
+      display: block;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
 <body>
-  <h1>Frequently Asked Questions</h1>
-  <div id="faq-container"></div>
 
-  <script>
-    fetch('faq.json')
-      .then(response => response.json())
-      .then(data => {
-        const container = document.getElementById('faq-container');
+<h1>Frequently Asked Questions</h1>
+<div id="faq-container"></div>
 
-        data.forEach(item => {
-          const accordion = document.createElement('div');
-          accordion.className = 'accordion';
+<script>
+  fetch('faq.json')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById('faq-container');
 
-          accordion.innerHTML = `
-            <div class="accordion-header">${item.question}</div>
-            <div class="accordion-content">${item.answer}</div>
-          `;
+      data.forEach(item => {
+        const accordion = document.createElement('div');
+        accordion.className = 'accordion';
 
-          container.appendChild(accordion);
-        });
+        accordion.innerHTML = `
+          <div class="accordion-header">${item.question}</div>
+          <div class="accordion-content">${item.answer}</div>
+        `;
 
-        document.querySelectorAll('.accordion-header').forEach(header => {
-          header.addEventListener('click', () => {
-            const parent = header.parentElement;
-            parent.classList.toggle('open');
-          });
+        container.appendChild(accordion);
+      });
+
+      document.querySelectorAll('.accordion-header').forEach(header => {
+        header.addEventListener('click', () => {
+          const parent = header.parentElement;
+          parent.classList.toggle('open');
         });
       });
-  </script>
-</body>
+    });
+</script>
 
+</body>
+</html>
