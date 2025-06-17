@@ -86,7 +86,7 @@
 <div id="faq-container"></div>
 
 <script>
-  // Load JSON and build accordion
+  // Load FAQ JSON and build accordion
   fetch('faq.json')
     .then(response => response.json())
     .then(data => {
@@ -104,26 +104,29 @@
         container.appendChild(accordion);
       });
 
+      // Handle opening/closing accordions
       document.querySelectorAll('.accordion-header').forEach(header => {
         header.addEventListener('click', () => {
           const parent = header.parentElement;
           parent.classList.toggle('open');
         });
       });
-    });
-
-  // Copy Code Functionality
-  document.addEventListener('click', function (e) {
-    if (e.target && e.target.classList.contains('copy-btn')) {
-      const code = e.target.nextElementSibling.innerText;
-      navigator.clipboard.writeText(code).then(() => {
-        e.target.textContent = 'Copied!';
-        setTimeout(() => {
-          e.target.textContent = 'Copy Code';
-        }, 2000);
+    })
+    .then(() => {
+      // Attach copy functionality AFTER content is rendered
+      document.addEventListener('click', function (e) {
+        if (e.target && e.target.classList.contains('copy-btn')) {
+          const codeElement = e.target.nextElementSibling;
+          const code = codeElement.innerText || codeElement.textContent;
+          navigator.clipboard.writeText(code).then(() => {
+            e.target.textContent = 'Copied!';
+            setTimeout(() => {
+              e.target.textContent = 'Copy Code';
+            }, 2000);
+          });
+        }
       });
-    }
-  });
+    });
 </script>
 
 </body>
