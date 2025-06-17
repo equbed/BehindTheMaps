@@ -18,7 +18,7 @@
 {"question": "Kernels",
     "answer": "<p>Kernels are how ArcGIS Notebooks connect to your data.</p><p>The Kernel can 'time out.' When that happens, you might get a pop-up notification like this one:</p><img src='images/kernel disconnect.png' alt='Kernel Disconnection Notification'><p>Just follow the directions. Go to the Kernel menu and select 'reconnect.' Even though it looks scary, this is a minor thing and doesn't break your code!</p>"
 },
-{"question": "Anatomy of a Notebook",
+{"question": "Making Notes within the Code",
     "answer": "<p>It is <i>really</i> useful to make notes as you create your code. This will help you when you need to revise your content later, as well as if someone else needs to use your code.</p><p>Use the # symbol to tell the code that you are making a note. See how the notes in the example below let you (or anyone using your code) know exactly what is going on.</p>"
 }
 ]
