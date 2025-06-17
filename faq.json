@@ -1,7 +1,7 @@
 [
   {
     "question": "Turning on Notebooks",
-    "answer": "<p>﻿Before you can set up a notebook in ArcGIS Online, you need to make sure they are enabled on your server. See <a href='https://www.arcgis.com/home/item.html?id=db05d4f32e6145669e9d39f0ab258b67&rmedium=links_esri_com_0_a&rsource=https%3A%2F%2Flinks.esri.com%2Fagol-help%2Flesson%2Fenable-notebooks'>here for directions.</a></p>"
+    "answer": "<p>Before you can set up a notebook in ArcGIS Online, you need to make sure they are enabled on your server. See <a href='https://www.arcgis.com/home/item.html?id=db05d4f32e6145669e9d39f0ab258b67&rmedium=links_esri_com_0_a&rsource=https%3A%2F%2Flinks.esri.com%2Fagol-help%2Flesson%2Fenable-notebooks'>here for directions.</a></p>"
   },
   {
     "question": "Creating a New Notebook",
@@ -9,16 +9,18 @@
   },
   {
     "question": "Anatomy of a Notebook",
-    "answer": "<img src='images/Anatomy of a Notebook.png' alt='Labeled portions of a notebook. You will use the Run and File buttons at the top when you are ready to use the code. The initialization code is at the to of the Notebook in the first cell. Each box of code is a cell. You can add additional cells using the buttons in the bottom right of the starter cells.'>"
+    "answer": "<img src='images/Anatomy of a Notebook.png' alt='Labeled portions of a notebook. You will use the Run and File buttons at the top when you are ready to use the code. The initialization code is at the top of the Notebook in the first cell. Each box of code is a cell. You can add additional cells using the buttons in the bottom right of the starter cells.'>"
   },
   {
     "question": "Initial Code",
-    "answer": "<p>ArcGIS Notebooks use Python Code. Let’s add our code now.</p><p>In the first cell (box), you should already see some default lines of code. Delete that information and add the following lines into that cell:</p><div class='code-container'><button class='copy-btn'>Copy Code</button><pre><code>import os\nimport pandas as pd\nfrom collections import defaultdict\nfrom arcgis.gis import GIS\nfrom arcgis.gis import SharingLevel\n\ngis = GIS(\"home\")</code></pre></div><H2>Data Security Note</h2><p>Use gis = GIS("home") in your initial code.</p><p>Do NOT use anything that asks you to put in your username or password in the code.</p>"
+    "answer": "<p>ArcGIS Notebooks use Python Code. Let’s add our code now.</p><p>In the first cell (box), you should already see some default lines of code. Delete that information and add the following lines into that cell:</p><div class='code-container'><button class='copy-btn'>Copy Code</button><pre><code>import os\\nimport pandas as pd\\nfrom collections import defaultdict\\nfrom arcgis.gis import GIS\\nfrom arcgis.gis import SharingLevel\\n\\ngis = GIS(\"home\")</code></pre></div><h2>Data Security Note</h2><p>Use <code>gis = GIS(\"home\")</code> in your initial code.</p><p>Do NOT use anything that asks you to put in your username or password in the code.</p>"
   },
-{"question": "Kernels",
+  {
+    "question": "Kernels",
     "answer": "<p>Kernels are how ArcGIS Notebooks connect to your data.</p><p>The Kernel can 'time out.' When that happens, you might get a pop-up notification like this one:</p><img src='images/kernel disconnect.png' alt='Kernel Disconnection Notification'><p>Just follow the directions. Go to the Kernel menu and select 'reconnect.' Even though it looks scary, this is a minor thing and doesn't break your code!</p>"
-},
-{"question": "Making Notes within the Code",
-    "answer": "<p>It is <i>really</i> useful to make notes as you create your code. This will help you when you need to revise your content later, as well as if someone else needs to use your code.</p><p>Use the # symbol to tell the code that you are making a note. See how the notes in the example below let you (or anyone using your code) know exactly what is going on.</p>"
-}
+  },
+  {
+    "question": "Making Notes within the Code",
+    "answer": "<p>It is <i>really</i> useful to make notes as you create your code. This will help you when you need to revise your content later, as well as if someone else needs to use your code.</p><p>Use the <code>#</code> symbol to tell the code that you are making a note. See how the notes in the example below let you (or anyone using your code) know exactly what is going on.</p>"
+  }
 ]
