@@ -10,5 +10,11 @@
   {
     "question": "Anatomy of a Notebook",
     "answer": "<img src='images/Anatomy of a Notebook.png' alt='Labeled portions of a notebook. You will use the Run and File buttons at the top when you are ready to use the code. The initialization code is at the to of the Notebook in the first cell. Each box of code is a cell. You can add additional cells using the buttons in the bottom right of the starter cells.' >"
+  },
+  {
+{
+  "question": "Initial Code",
+  "answer": "<p>﻿ArcGIS Notebooks use Python Code. Let’s add our code now.</p><p>In the first cell (box), you should already see some default lines of code. Delete that information and add the following lines into that cell:</p><div class='code-container'><button class='copy-btn' onclick='copyCode(this)'>Copy Code</button><pre><code class='language-python'>import os\nimport pandas as pd\nfrom collections import defaultdict\nfrom arcgis.gis import GIS\nfrom arcgis.gis import SharingLevel\n\ngis = GIS(\"home\")</code></pre></div>"
+}
   }
 ]
