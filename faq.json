@@ -5,17 +5,14 @@
   },
   {
     "question": "Creating a New Notebook",
-    "answer": "<p><i>Note: To do this, you MUST be an administrator on the site.</i></p><h1>Step 1</h1><p>Log into your ArcGIS Account. Select Notebook from the top menu bar.</p><img src='images/Notebook.png' alt='Select Notebook from top menu bar'><p>If you do not see Notebook as an option, confirm that you are an administrator for that site. Only administrators can see the Notebook tools.</p><h1>Step 2</h2><p>Click +New Notebook and select 'standard.'<img src='images/New Notebook Menu.png' alt='Press the +New Notebook button and select Standard.'><h3>Step 3</h3><p>As with anything on AGOL, Notebooks do not save automatically. Be sure to save often.</p><p>First, give your notebook a name by clicking Save > Save As on the right.</p><img src='images/Creating a New Notebook.png' alt='Select Notebook from top menu bar'><p><i>Give it a moment to save. I have found that saving and running things in notebooks always takes a tad longer than you think it should.</i></p>"
+    "answer": "<p><i>Note: To do this, you MUST be an administrator on the site.</i></p><h1>Step 1</h1><p>Log into your ArcGIS Account. Select Notebook from the top menu bar.</p><img src='images/Notebook.png' alt='Select Notebook from top menu bar'><p>If you do not see Notebook as an option, confirm that you are an administrator for that site. Only administrators can see the Notebook tools.</p><h1>Step 2</h1><p>Click +New Notebook and select 'standard.'</p><img src='images/New Notebook Menu.png' alt='Press the +New Notebook button and select Standard.'><h3>Step 3</h3><p>As with anything on AGOL, Notebooks do not save automatically. Be sure to save often.</p><p>First, give your notebook a name by clicking Save > Save As on the right.</p><img src='images/Creating a New Notebook.png' alt='Select Notebook from top menu bar'><p><i>Give it a moment to save. I have found that saving and running things in notebooks always takes a tad longer than you think it should.</i></p>"
   },
   {
     "question": "Anatomy of a Notebook",
-    "answer": "<img src='images/Anatomy of a Notebook.png' alt='Labeled portions of a notebook. You will use the Run and File buttons at the top when you are ready to use the code. The initialization code is at the to of the Notebook in the first cell. Each box of code is a cell. You can add additional cells using the buttons in the bottom right of the starter cells.' >"
+    "answer": "<img src='images/Anatomy of a Notebook.png' alt='Labeled portions of a notebook. You will use the Run and File buttons at the top when you are ready to use the code. The initialization code is at the to of the Notebook in the first cell. Each box of code is a cell. You can add additional cells using the buttons in the bottom right of the starter cells.'>"
   },
   {
-{
-  {
-  "question": "Initial Code",
-  "answer": "<p>Paste this code:</p><div class='code-container'><button class='copy-btn'>Copy Code</button><pre><code>import os\nimport pandas as pd\nfrom collections import defaultdict\nfrom arcgis.gis import GIS\nfrom arcgis.gis import SharingLevel\n\ngis = GIS(\"home\")</code></pre></div>"
-}
+    "question": "Initial Code",
+    "answer": "<p>Paste this code:</p><div class='code-container'><button class='copy-btn'>Copy Code</button><pre><code>import os\nimport pandas as pd\nfrom collections import defaultdict\nfrom arcgis.gis import GIS\nfrom arcgis.gis import SharingLevel\n\ngis = GIS(\"home\")</code></pre></div>"
   }
 ]
