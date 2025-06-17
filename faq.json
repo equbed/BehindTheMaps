@@ -13,8 +13,7 @@
   },
   {
     "question": "Initial Code",
-    "answer": "<p>ArcGIS Notebooks use Python Code. Let’s add our code now.
-In the first cell (box), you should already see some default lines of code. Delete that information and add the following lines into that cell:</p><div class='code-container'><button class='copy-btn'>Copy Code</button><pre><code>import os\nimport pandas as pd\nfrom collections import defaultdict\nfrom arcgis.gis import GIS\nfrom arcgis.gis import SharingLevel\n\ngis = GIS(\"home\")</code></pre></div><H2>Data Security Note</h2><p>Use gis = GIS("home") in your initial code.</p><p>Do NOT use anything that asks you to put in your username or password in the code.</p>"
+    "answer": "<p>ArcGIS Notebooks use Python Code. Let’s add our code now.</p><p>In the first cell (box), you should already see some default lines of code. Delete that information and add the following lines into that cell:</p><div class='code-container'><button class='copy-btn'>Copy Code</button><pre><code>import os\nimport pandas as pd\nfrom collections import defaultdict\nfrom arcgis.gis import GIS\nfrom arcgis.gis import SharingLevel\n\ngis = GIS(\"home\")</code></pre></div><H2>Data Security Note</h2><p>Use gis = GIS("home") in your initial code.</p><p>Do NOT use anything that asks you to put in your username or password in the code.</p>"
   },
 {"question": "Kernels",
     "answer": "<p>Kernels are how ArcGIS Notebooks connect to your data.</p><p>The Kernel can 'time out.' When that happens, you might get a pop-up notification like this one:</p><img src='images/kernel disconnect.png' alt='Kernel Disconnection Notification'><p>Just follow the directions. Go to the Kernel menu and select 'reconnect.' Even though it looks scary, this is a minor thing and doesn't break your code!</p>"
